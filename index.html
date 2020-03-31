@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <main class="contenido-principal">
+        <div id="wsc__formulario">
+            <div class="wsc_dias">
+                <div>
+                    <h4>Lunes a Viernes</h4>
+                    <div class="form-group-wsc">
+                        <label for="activateLV">Activar</label>
+                        <input type="checkbox" id="activateLV">
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="startLV">Hora de Inicio</label>
+                        <input type="number" id="startLV" placeholder="8" value="0" reqired>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="endLV">Hora de Fin</label>
+                        <input type="number" id="endLV" placeholder="18" value="0" required>
+                    </div>
+                </div> <!-- fin lunes a viernes -->
+                <div>
+                    <h4>Sabados y Domingos</h4>
+                    <div class="form-group-wsc">
+                        <label for="activateSD">Activar</label>
+                        <input type="checkbox" id="activateSD">
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="startSD">Hora de Inicio</label>
+                        <input type="number" id="startSD" placeholder="8" value="0" reqired>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="endSD">Hora de Fin</label>
+                        <input type="number" id="endSD" placeholder="18" value="0" required>
+                    </div>
+                </div>
+            </div>
+            <h3>Datos Generales</h3>
+            <div class="wsc_opcions">
+                <div class="form-group-wsc">
+                    <label for="openChat">Tiempo de apertura</label>
+                    <input type="number" id="openChat" placeholder="Tiempo en segundos" value="10" required>
+                </div>
+                <div class="form-group-wsc">
+                    <label for="timezone">Timezone</label>
+                    <input type="text" id="timezone" placeholder="Time zone del lugar donde se mostrara" required>
+                </div>
+                <div class="form-group-wsc">
+                    <label for="messagePrincipal">Mensaje Principal</label>
+                    <input type="text" id="messagePrincipal" placeholder="Mensaje...." required>
+                </div>
+                <div class="form-group-wsc">
+                    <label for="textBotton">Texto Boton</label>
+                    <input type="text" id="textBotton" placeholder="Texto que se mostrara en el boton" required>
+                </div>
+
+            </div>
+            <div class="wsc_usuarios">
+                <div class="wsc_textos">
+                    <h3>Usuarios</h3>
+                    <button type="button" class="wsc_btn" id="nuevoUsuario">Nuevo
+                        Usuario</button>
+                </div>
+                <div class="wsc_agregar_usuario ">
+                    <div class="form-group-wsc">
+                        <label for="nombreUsuario">Nombre</label>
+                        <input type="text" id="nombreUsuario" placeholder="Aqui el nombre del usuario" required>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="imgUser">Imagen</label>
+                        <input type="text" id="imgUser" placeholder="Inserte url de una foto" required>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="messageUser">Mensaje</label>
+                        <input type="text" id="messageUser" placeholder="Mensaje...." required>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="phoneNumber">Telefono</label>
+                        <input type="text" id="phoneNumber" placeholder="Ingrese el numero de Telefono" required>
+                    </div>
+                    <button class="wsc_btn" id="crearUsuario" >Agregar</button>
+                </div>
+                <table class="wsc_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Photo</th>
+                            <th scope="col">Mensaje</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cuerpoTabla">
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" class="wsc_btn" id="guardarChat">Generar Script</button>
+        </div>
+
+        <!-- Resultado Script -->
+        <div id="wsc_script_inner" style="padding: 30px">
+
+        </div>
+        <button class="wsc_btn btn_copiar" id="wsc_copiar">Copiar</button>
+    </main>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

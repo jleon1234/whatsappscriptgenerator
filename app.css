@@ -1,0 +1,89 @@
+.contenido-principal{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.wsc__formulario{
+    display: flex;
+    flex-direction: column;
+}
+.wsc_dias{
+    display: flex;
+}
+.wsc_dias > div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex:1;;
+}
+.wsc_opcions{
+    display:flex;
+    flex-wrap: wrap;
+}
+.wsc_opcions > div {
+    flex: 1 0 calc(50% - 20px);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group-wsc{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width:100%;
+}
+.form-group-wsc label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.form-group-wsc input{
+    padding: 12px;
+    font-size: 16px;
+}
+
+.wsc_usuarios{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.wsc_usuarios .wsc_textos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wsc_table{
+    margin: 10px 0;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+}
+.wsc_btn{
+    padding: 10px;
+    background-color: #007bff!important;
+    color: #fff;
+    font-size: 16px;
+}
+.btn_copiar{
+    background-color: #28a745!important;
+    display: none;
+    text-align: center;
+    margin: 5px auto;
+    width: 50%;
+}
+#wsc_script_inner{
+    display: none;
+    border: 1px solid #e1e1e1;
+    margin: 10px 0;
+}
+
+.wsc_agregar_usuario{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.active_agregar{
+    display: flex;
+}
