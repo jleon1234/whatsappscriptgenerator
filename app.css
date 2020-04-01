@@ -4,18 +4,46 @@
     margin: 0 auto;
     position: relative;
 }
-.wsc__formulario{
+#wsc__formulario{
     display: flex;
     flex-direction: column;
+    border: 1px solid #e1e1e1;
+    border-radius: 1%;
+    box-shadow: 0px 0px 15px #d3d3d3;
+}
+h4{
+    text-align: center;
+    color: #fff;
+}
+h3{
+    padding: .8rem;
+    margin: 0;
+    text-align: center;
+    color: #fff;
 }
 .wsc_dias{
     display: flex;
+    padding: 1rem;
 }
 .wsc_dias > div{
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
-    flex:1;;
+    flex-basis: 70%;
+    flex:1;
+    margin-left: 1rem;
+    border: 1px solid #e1e1e1;
+    
+}
+.wsc_dias div .titulo{
+    background-color: #e6ab3f;
+    margin-bottom: .5rem;
+}
+.wsc_dias div .form-group-wsc{
+    padding: .5rem;
+}
+.wsc_titulo{
+    background-color: #ffb340;
+    margin-bottom: 1rem;
 }
 .wsc_opcions{
     display:flex;
@@ -23,52 +51,72 @@
 }
 .wsc_opcions > div {
     flex: 1 0 calc(50% - 20px);
-    margin-right: 10px;
+    /* margin-right: 10px; */
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.wsc_opcions .form-group-wsc input{
+    width: 70%;
+}
+.wsc_opcions .form-group-wsc label{
+    text-align: center;
+    width: 70%;
 }
 .form-group-wsc{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     margin-bottom: 10px;
     width:100%;
 }
 .form-group-wsc label {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 15px;
+    margin-right: 1rem;
+    width: 50%;
+    margin-top: .4rem;
+    font-weight: bold;
 }
 .form-group-wsc input{
-    padding: 12px;
-    font-size: 16px;
+    width: 50%;
+    padding: 7px;
+    font-size: 14px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .wsc_usuarios{
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin-bottom: 4rem;
 }
 .wsc_usuarios .wsc_textos{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffb340;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
 }
 
-.wsc_table{
-    margin: 10px 0;
+.wsc_table{ 
+    margin-top: 2rem;
     border: 1px solid #e1e1e1;
     text-align: center;
 }
 .wsc_btn{
-    padding: 10px;
-    background-color: #007bff!important;
+    padding: 1.1rem;
+    background-color: #2aa7d8!important;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
+    cursor: pointer;
 }
 .btn_copiar{
     background-color: #28a745!important;
     display: none;
     text-align: center;
-    margin: 5px auto;
+    margin: 2rem auto;
     width: 50%;
 }
 #wsc_script_inner{
@@ -82,6 +130,10 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+    padding: 1rem;
+}
+.wsc_agregar_usuario .wsc_btn{
+    width: 50%;
 }
 
 .active_agregar{

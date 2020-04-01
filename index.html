@@ -14,7 +14,9 @@
         <div id="wsc__formulario">
             <div class="wsc_dias">
                 <div>
-                    <h4>Lunes a Viernes</h4>
+                    <div class="titulo">
+                        <h4>Lunes a Viernes</h4>
+                    </div>
                     <div class="form-group-wsc">
                         <label for="activateLV">Activar</label>
                         <input type="checkbox" id="activateLV">
@@ -29,7 +31,10 @@
                     </div>
                 </div> <!-- fin lunes a viernes -->
                 <div>
-                    <h4>Sabados y Domingos</h4>
+                    <div class="titulo">
+                        <h4>Sabados y Domingos</h4>
+                    </div>
+                    
                     <div class="form-group-wsc">
                         <label for="activateSD">Activar</label>
                         <input type="checkbox" id="activateSD">
@@ -44,25 +49,28 @@
                     </div>
                 </div>
             </div>
-            <h3>Datos Generales</h3>
-            <div class="wsc_opcions">
-                <div class="form-group-wsc">
-                    <label for="openChat">Tiempo de apertura</label>
-                    <input type="number" id="openChat" placeholder="Tiempo en segundos" value="10" required>
+            <div class="wsc_datos_generales">
+                <div class="wsc_titulo">
+                    <h3>Datos Generales</h3>
                 </div>
-                <div class="form-group-wsc">
-                    <label for="timezone">Timezone</label>
-                    <input type="text" id="timezone" placeholder="Time zone del lugar donde se mostrara" required>
+                <div class="wsc_opcions">
+                    <div class="form-group-wsc">
+                        <label for="openChat">Tiempo de apertura</label>
+                        <input type="number" id="openChat" placeholder="Tiempo en segundos" value="10" required>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="timezone">Timezone</label>
+                        <input type="text" id="timezone" placeholder="Time zone del lugar donde se mostrara" required>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="messagePrincipal">Mensaje Principal</label>
+                        <input type="text" id="messagePrincipal" placeholder="Mensaje...." required>
+                    </div>
+                    <div class="form-group-wsc">
+                        <label for="textBotton">Texto Boton</label>
+                        <input type="text" id="textBotton" placeholder="Texto que se mostrara en el boton" required>
+                    </div>
                 </div>
-                <div class="form-group-wsc">
-                    <label for="messagePrincipal">Mensaje Principal</label>
-                    <input type="text" id="messagePrincipal" placeholder="Mensaje...." required>
-                </div>
-                <div class="form-group-wsc">
-                    <label for="textBotton">Texto Boton</label>
-                    <input type="text" id="textBotton" placeholder="Texto que se mostrara en el boton" required>
-                </div>
-
             </div>
             <div class="wsc_usuarios">
                 <div class="wsc_textos">
